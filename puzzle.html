@@ -6,45 +6,56 @@
     <title>Image Puzzle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <script src="myScript.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Find the Code</a>
+                  </div>
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                  </ul>
+                </div>
+              </nav>
+    <h1>Find the Code</h1>
+    <p>
+        The four letter code is hidden in the images below. Enter the letters into the text boxes to see if you've solved it!
+    </p>
     <p>
         <input type="text" maxlength="1">
         <input type="text" maxlength="1">
     </p>
     <div class="row">
         <div class="column">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img11" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200" onclick="toggleImage(id)">
+            <img id="img21" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img31" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img41" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
         </div>
         <div class="column">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img12" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img22" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img32" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img42" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
         </div>
         <div class="column">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img13" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img23" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img33" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img43" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
         </div>
         <div class="column">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-        </div>
-        <div class="column">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img14" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img24" src="escher.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200" onclick="rotateImage(id)">
+            <img id="img34" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img44" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
         </div>
     </div>
 </body>
