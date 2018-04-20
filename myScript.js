@@ -5,7 +5,7 @@ var primaryImage = {img11 : "squareIcon.jpg"};
 var secondaryImage = {img11 : "escher.jpg"};
 
 //data for image rotation
-var currentRotation = {img24 : 0};
+var currentRotation = {img42 : 0};
 
 function toggleImage(id) {
     if(toggled[id]){
