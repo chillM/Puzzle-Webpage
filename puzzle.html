@@ -24,38 +24,40 @@
                   </ul>
                 </div>
               </nav>
-    <h1>Find the Code</h1>
+    <div class="well-lg">Find the Code</div>
     <p>
         The four letter code is hidden in the images below. Enter the letters into the text boxes to see if you've solved it!
     </p>
-    <p>
+    <div class="flex-container">
         <input type="text" maxlength="1">
         <input type="text" maxlength="1">
-    </p>
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+    </div>
     <div class="column">
         <div class="row">
-            <img id="img11" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200" onclick="toggleImage(id)">
-            <img id="img12" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img id="img13" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img id="img14" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img11" src="pictures/hand1.gif" class="img-thumbnail" alt="Square Icon" width="200" height="200" >
+            <img id="img12" src="pictures/squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200" onclick="toggleImage(id)">
+            <img id="img13" src="pictures/squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img14" src="pictures/squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
         </div>
         <div class="row">
-            <img id="img21" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img id="img22" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img id="img23" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img id="img24" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img21" src="pictures/squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img22" src="pictures/hand2.gif" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img23" src="pictures/squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img24" src="pictures/closedDoor.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200" ondrop="drop(event)" ondragover="allowDrop(event)">
         </div>
         <div class="row">
-            <img id="img31" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img id="img32" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img id="img33" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img id="img34" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img31" src="pictures/squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img32" src="pictures/squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img33" src="pictures/hand3.gif" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img34" src="pictures/radio.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
         </div>
         <div class="row">
-            <img id="img41" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img id="img42" src="escher.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200" onclick="rotateImage(id)">
-            <img id="img43" src="squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
-            <img id="img44" src="escher.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img41" src="pictures/key.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200" draggable="true" ondragstart="drag(event)">
+            <img id="img42" src="pictures/escher.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200" onclick="rotateImage(id)">
+            <img id="img43" src="pictures/squareIcon.jpg" class="img-thumbnail" alt="Square Icon" width="200" height="200">
+            <img id="img44" src="pictures/hand4.gif" class="img-thumbnail" alt="Square Icon" width="200" height="200">
         </div>
     </div>
 </body>

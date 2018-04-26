@@ -1,8 +1,8 @@
 //global data needed
 //data for image toggling
-var toggled = {img11 : false};
-var primaryImage = {img11 : "pictures/squareIcon.jpg"};
-var secondaryImage = {img11 : "pictures/escher.jpg"};
+var toggled = {img12 : false};
+var primaryImage = {img12 : "pictures/squareIcon.jpg"};
+var secondaryImage = {img12 : "pictures/escher.jpg"};
 
 //data for image rotation
 var currentRotation = {img42 : 0};
@@ -41,7 +41,7 @@ function drag(ev) {
 
 function drop(ev, id) {
     ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
+    //var data = ev.dataTransfer.getData("text");
+    //ev.target.appendChild(document.getElementById(data));
     document.getElementById(img42).src = "pictures/openDoor.jpg";
 }
