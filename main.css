@@ -1,6 +1,7 @@
 input {
     width: 4%;
     margin-right: 40px;
+    padding-top: 5px;
 }
 
 input[type="text"] {
@@ -28,6 +29,29 @@ li{
 }
 
 .ok{
-    background: green;
+    background: rgba(31, 212, 107, 0.63);
 }
 
+.error{
+    background: #dd3d3d86;
+}
+
+#msgbox{
+    padding-top: 10px;
+}
+
+#img41{
+    transform : rotate(180deg);
+}
+
+#img43{
+    transform: rotate(-90deg);
+}
+
+#img14{
+    transform: rotate(180deg);
+}
+
+#img23{
+    transform: rotate(-90deg);
+}
