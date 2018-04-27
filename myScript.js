@@ -102,20 +102,27 @@ $(document).ready(function()
     var audioElement = document.createElement('audio');
     var playing = false;
     var tracks = ["audio/Your Call.mp3", "audio/Smooth Lovin.mp3", "audio/Master of the Feast.mp3"];
+    var countdownText = ["pictures/seven.jpg", "pictures/nine.jpg", "pictures/ten.jpg"];
     var currentTrack = 0;
     audioElement.setAttribute('src', 'audio/Your Call.mp3');
 
     $('#img34').click(function() {
         if(playing){
+            //stop the music
             audioElement.pause();
             audioElement.currentTime = 0;
             currentTrack = (currentTrack + 1) % tracks.length;
             audioElement.setAttribute('src', tracks[currentTrack]);
             playing = false;
+            document.getElementById("img31").src = "pictures/countdownStart.jpg";
+            document.getElementById("img32").src = "pictures/one.jpg";
         }
         else{
+            //start the music
             audioElement.play();
             playing = true;
+            document.getElementById("img31").src = "pictures/countdown.gif";
+            document.getElementById("img32").src = countdownText[currentTrack];
         }
     });
  
