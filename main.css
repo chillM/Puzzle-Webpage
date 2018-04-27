@@ -22,3 +22,12 @@ body{
 li{
     color: black;
 }
+
+.ok, .info, .error{
+    padding: 4px;
+}
+
+.ok{
+    background: green;
+}
+

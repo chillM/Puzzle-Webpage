@@ -1,3 +1,49 @@
+$(document).ready(function() 
+{
+    //needed variables
+    var validFields = {input1:false, input2:false, input3:false, input4:false};
+    //add message boxes
+    $( "<span class=\"info\" id=\"i1-msgbox\"></span>" ).insertAfter( "#input1" );
+    $( "<span class=\"info\" id=\"i2-msgbox\"></span>" ).insertAfter( "#input2" );
+    $( "<span class=\"info\" id=\"i3-msgbox\"></span>" ).insertAfter( "#input3" );
+    $( "<span class=\"info\" id=\"i4-msgbox\"></span>" ).insertAfter( "#input4" );
+    $("span").hide();
+
+    $( "#input1" ).focusin(function() {
+       // $("#msgbox").addClass("info");
+        $("#msgbox").text("This adds text to the box");
+        $("#msgbox").show();
+});
+
+$( "#input1" ).focusout(function() {
+    //validate input when the user leaves
+    if(this.value == "a"){
+        //valid
+        $("#msgbox").text("This adds text to the box");
+        $("#input1").addClass("ok");
+        validFields["input1"] = true;
+    }
+    else{
+        //invalid
+        $("#msgbox").text("This adds text to the box");
+        $("#input1").removeClass("ok");
+        validFields["input1"] = false;
+
+    }
+});
+
+$("#submit").click(function() {
+    //validate
+    if(validFields["input1"]){
+        //valid answer
+        //go to win screen
+        window.location.href = "http://google.com";
+    }
+
+})
+ 
+});
+
 //global data needed
 //data for image toggling
 var toggled = {img12 : false};
@@ -43,5 +89,10 @@ function drop(ev, id) {
     ev.preventDefault();
     //var data = ev.dataTransfer.getData("text");
     //ev.target.appendChild(document.getElementById(data));
-    document.getElementById(img42).src = "pictures/openDoor.jpg";
+    document.getElementById("img24").src = "pictures/openDoor.jpg";
 }
+
+
+//JQuery input validation
+
+
